@@ -7,8 +7,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello World!!")
-	Func2_1()
+	Func2_2()
 
 }
 
@@ -27,7 +26,17 @@ func Func2_2() {
 	x := 10
 
 	if x > 5 {
-		fmt.Printf("x is big")
+		fmt.Println("x is big")
 
+	}
+	if x > 100 {
+		fmt.Println("x is very big")
+
+	} else {
+		fmt.Println("x is not that big")
+	}
+
+	if x > 5 && x < 15 {
+		fmt.Println("x is just right")
 	}
 }
