@@ -1,2 +1,2 @@
 # GoLang
-GoRepo
+Repository for testing GO lang code.
