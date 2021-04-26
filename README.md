@@ -1,2 +1,2 @@
 # GoLang
-Repository for testing GO lang code.
+Repository for my work from the https://www.linkedin.com/learning/go-essential-training/getting-started course.
