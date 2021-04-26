@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	forLoop()
+	fizzBuzz()
 
 }
 
@@ -84,5 +84,23 @@ func Func2_2Switch() {
 func forLoop() {
 	for i := 0; i < 10; i++ {
 		fmt.Println(i)
+	}
+}
+
+func fizzBuzz() {
+
+	for i := 0.0; i < 21; i++ {
+
+		if i/3 == float64(int64(i/3)) {
+			fmt.Println("Fizz")
+		}
+		if i/5 == float64(int64(i/5)) {
+			fmt.Println("Buzz")
+		}
+		if i/5 == float64(int64(i/5)) && i/3 == float64(int64(i/3)) {
+			fmt.Println("FizzBuzz")
+		} else {
+			fmt.Println(i)
+		}
 	}
 }
