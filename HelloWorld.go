@@ -13,16 +13,21 @@ func main() {
 }
 
 func Func2_1() {
-	var x float64
-	var y float64
-
-	x = 1
-	y = 2
+	x, y := 1.0, 2.0
 
 	fmt.Printf("x=%v, type of %T\n", x, y)
 	fmt.Printf("y=%v, type of %T\n", y, y)
 
-	var mean float64
-	mean = (x + y) / 2.0
+	mean := (x + y) / 2.0
 	fmt.Printf("Result: %v, type of %T\n", mean, mean)
+}
+
+func Func2_2() {
+
+	x := 10
+
+	if x > 5 {
+		fmt.Printf("x is big")
+
+	}
 }
