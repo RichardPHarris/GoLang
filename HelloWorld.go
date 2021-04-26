@@ -2,7 +2,9 @@
 // Click here and start typing.
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	fmt.Println("Hello World!!")
@@ -23,5 +25,4 @@ func Func2_1() {
 	var mean float64
 	mean = (x + y) / 2.0
 	fmt.Printf("Result: %v, type of %T\n", mean, mean)
-
 }
