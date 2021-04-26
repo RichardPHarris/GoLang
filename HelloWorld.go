@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	Func2_2()
+
+	forLoop()
 
 }
 
@@ -21,7 +22,7 @@ func Func2_1() {
 	fmt.Printf("Result: %v, type of %T\n", mean, mean)
 }
 
-func Func2_2() {
+func Func2_2If() {
 
 	x := 10
 
@@ -38,5 +39,50 @@ func Func2_2() {
 
 	if x > 5 && x < 15 {
 		fmt.Println("x is just right")
+	}
+
+	if x < 20 || x > 30 {
+		fmt.Println("x is out of range")
+	}
+
+	a := 11.0
+	b := 20.0
+
+	if frac := a / b; frac > 0.5 {
+		fmt.Println("a is more then half of b")
+	}
+
+}
+
+func Func2_2Switch() {
+
+	x := 2
+
+	switch x {
+
+	case 1:
+		fmt.Println("one")
+	case 2:
+		fmt.Println("two")
+	case 3:
+		fmt.Println("three")
+	default:
+		fmt.Println("Many")
+	}
+
+	switch {
+	case x > 100:
+		fmt.Println("x is very big")
+	case x > 10:
+		fmt.Println("x is big")
+	default:
+		fmt.Println("x is small")
+	}
+
+}
+
+func forLoop() {
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
 	}
 }
