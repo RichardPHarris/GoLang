@@ -93,11 +93,9 @@ func fizzBuzz() {
 
 		if i/3 == float64(int64(i/3)) {
 			fmt.Println("Fizz")
-		}
-		if i/5 == float64(int64(i/5)) {
+		} else if i/5 == float64(int64(i/5)) {
 			fmt.Println("Buzz")
-		}
-		if i/5 == float64(int64(i/5)) && i/3 == float64(int64(i/3)) {
+		} else if i/5 == float64(int64(i/5)) && i/3 == float64(int64(i/3)) {
 			fmt.Println("FizzBuzz")
 		} else {
 			fmt.Println(i)
