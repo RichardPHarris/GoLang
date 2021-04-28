@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	slice()
+	maxValEx()
 
 }
 
@@ -147,4 +147,26 @@ func slice() {
 	// append
 	loons = append(loons, "elmer")
 	fmt.Println(loons) // [bugs daffy taz elmer]
+}
+
+func maxValEx() {
+	nums := []int{16, 8, 42, 4, 23, 15}
+	max := 0
+	current := 0
+
+	for i := 0; i < len(nums); i++ {
+
+		current = nums[i]
+
+		if i == 0 {
+			max = nums[i]
+
+		} else if current > max {
+			max = nums[i]
+
+		}
+
+	}
+
+	fmt.Println(max)
 }
